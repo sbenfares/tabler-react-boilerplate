@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "./Header";
+import NavbarExpand from "./NavbarExpand";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -12,6 +13,7 @@ const Layout = (props) => {
   return (
     <>
       <Header headerItems={headerItems} />
+      <NavbarExpand navbarExpandItems={headerItems.links} />
       <Navbar menuItems={menuItems} />
       <div className="content">
         {props.children}
